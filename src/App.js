@@ -1,4 +1,4 @@
-import Expenseitem from "./compnents/Expenseitem";
+import ExpensesList from "./compnents/ExpensesList";
 
 function App() {
   const expenses = [
@@ -26,27 +26,7 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <p>this is also visible. I want to really create some nice looking websites :)</p>
-      <Expenseitem 
-      title = {expenses[0].title}
-      amount = {expenses[0].amount}
-      date = {expenses[0].date}
-      ></Expenseitem>
-      <Expenseitem 
-      title = {expenses[1].title}
-      amount = {expenses[1].amount}
-      date = {expenses[1].date}
-      ></Expenseitem>
-      <Expenseitem
-      title = {expenses[2].title}
-      amount = {expenses[2].amount}
-      date = {expenses[2].date}
-      ></Expenseitem>
-      <Expenseitem
-      title = {expenses[3].title}
-      amount = {expenses[3].amount}
-      date = {expenses[3].date}
-      ></Expenseitem>
+      <ExpensesList items={expenses}/>
     </div>
   );
 }
