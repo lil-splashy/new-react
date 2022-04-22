@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './ExpensesFilter.css';
 
 const ExpensesFilter = (props) => {
@@ -20,4 +19,6 @@ const ExpensesFilter = (props) => {
         </div>
     </div>
     );
-}
+};
+
+export default ExpensesFilter;
